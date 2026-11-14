@@ -1,0 +1,195 @@
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #AFEEEE;
+}
+
+/* ENCABEZADO */
+header {
+    background: BLACK;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* PORTADA */
+.inicio {
+    height: 450px;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1400");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    color: #FF0000;
+}
+
+.contenido h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+.boton {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background: #e6a800;
+}
+
+/* PRODUCTOS */
+.productos {
+    padding: 60px 8%;
+    text-align: center;
+
+}
+
+.productos h2,
+.nosotros h2,
+.contacto h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: GREEN;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    margin: 15px 5;
+}
+
+.producto p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* NOSOTROS */
+.nosotros {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.nosotros h2 {
+    color: #ffcc00;
+}
+
+.nosotros p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* CONTACTO */
+.contacto {
+    padding: 60px 10%;
+    text-align: center;
+    background: white;
+}
+
+.contacto p {
+    margin: 15px;
+    font-size: 18px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* DISEÑO PARA CELULARES */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .contenido h1 {
+        font-size: 29px;
+    }
+
+    .inicio {
+        height: 400px;
+    }
+}
